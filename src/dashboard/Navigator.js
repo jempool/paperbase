@@ -27,8 +27,8 @@ const categories = [
       { id: 'Database', icon: <DnsRoundedIcon /> },
       { id: 'Storage', icon: <PermMediaOutlinedIcon /> },
       { id: 'Hosting', icon: <PublicIcon /> },
-      { id: 'Functions', icon: <SettingsEthernetIcon /> },
       { id: 'ML Kit', icon: <SettingsInputComponentIcon /> },
+      { id: 'Functions', icon: <SettingsEthernetIcon /> },
     ],
   },
   {
@@ -86,7 +86,7 @@ function Navigator(props) {
   const { classes, ...other } = props;
 
   return (
-    <Drawer variant="permanent" {...other}>
+    <Drawer variant="permanent" {...other} data-testid="navigator-paper">
       <List disablePadding>
         <ListItem className={clsx(classes.firebase, classes.item, classes.itemCategory)}>
           Paperbase
