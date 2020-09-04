@@ -4,6 +4,7 @@
 
 node_modules
 .directory
+FIRE_TOKEN
 
 /.pnp
 .pnp.js
