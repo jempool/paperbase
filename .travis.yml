@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 14
+
+jobs:
+  include:
+    - language: node_js
+      node_js: '14'
+      warnings_are_errors: false
+      
+      cache:
+        directories:
+          - node_modules
+
+      branches:
+        only:
+          - master
+
+      install:
+        - npm install
+        
+      script:
+        - npm run build
+
+      deploy:
+        provider: firebase
+        skip_cleanup: true
+        token: $FIRE_TOKEN
