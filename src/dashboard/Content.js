@@ -77,7 +77,7 @@ function Content() {
 
   return (
     <Paper className={classes.paper}>
-      {/* <BodyContent classes={classes} /> */}
+      <BodyContent classes={classes} />
     </Paper>
   );
 }
