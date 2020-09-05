@@ -25,4 +25,7 @@ jobs:
       deploy:
         provider: firebase
         skip_cleanup: true
-        token: $FIRE_TOKEN
+        token: $FIREBASE_TOKEN
+      
+      after_success:
+        - ./travis_merge_script.sh
