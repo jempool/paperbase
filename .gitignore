@@ -5,6 +5,7 @@
 node_modules
 .directory
 TOKENS
+integration.sh
 
 /.pnp
 .pnp.js
