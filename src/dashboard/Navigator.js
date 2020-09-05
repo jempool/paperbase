@@ -31,14 +31,14 @@ const categories = [
       { id: 'Functions', icon: <SettingsEthernetIcon /> },
     ],
   },
-  {
-    id: 'Quality',
-    children: [
-      { id: 'Analytics', icon: <SettingsIcon /> },
-      { id: 'Performance', icon: <TimerIcon /> },
-      { id: 'Test Lab', icon: <PhonelinkSetupIcon /> },
-    ],
-  },
+  // {
+  //   id: 'Quality',
+  //   children: [
+  //     { id: 'Analytics', icon: <SettingsIcon /> },
+  //     { id: 'Performance', icon: <TimerIcon /> },
+  //     { id: 'Test Lab', icon: <PhonelinkSetupIcon /> },
+  //   ],
+  // },
 ];
 
 const styles = (theme) => ({
