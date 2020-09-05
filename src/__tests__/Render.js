@@ -36,3 +36,4 @@ describe("Render", () => {
     expect(Paper).toBeInTheDocument();
   });
 });
+
