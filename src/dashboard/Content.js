@@ -40,7 +40,7 @@ function Content() {
 
   return (
     <Paper className={classes.paper}>
-      {/* <AppBar className={classes.searchBar} position="static" color="default" elevation={0} data-testid="content-paper">
+      <AppBar className={classes.searchBar} position="static" color="default" elevation={0} data-testid="content-paper">
         <Toolbar>
           <Grid container spacing={2} alignItems="center">
             <Grid item>
@@ -73,7 +73,7 @@ function Content() {
         <Typography color="textSecondary" align="center">
           No users for this project yet
         </Typography>
-      </div> */}
+      </div>
     </Paper>
   );
 }
