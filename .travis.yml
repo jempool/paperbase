@@ -24,9 +24,12 @@ jobs:
         - npm run build
 
       deploy:
-        provider: firebase
-        skip_cleanup: true
-        token: $FIRE_TOKEN
-      
-      after_success:
-        - ./travis_merge_script.sh
+        - provider: firebase
+          skip_cleanup: true
+          token: $FIRE_TOKEN
+        
+        - provider: firebase
+          script: travis_merge_script.sh
+          token: $FIRE_TOKEN
+          on:
+            branch: dev
