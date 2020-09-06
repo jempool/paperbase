@@ -12,10 +12,6 @@ jobs:
         directories:
           - node_modules
 
-      branches:
-        only:
-          - master
-
       install:
         - npm install
         
@@ -27,6 +23,8 @@ jobs:
         - provider: firebase
           skip_cleanup: true
           token: $FIRE_TOKEN
+          on:
+            branch: master
         
         - provider: firebase
           script: travis_merge_script.sh
