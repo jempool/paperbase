@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 14
+after_success:
+  - ./travis_merge_script.sh
 
 jobs:
   include:
@@ -20,13 +22,6 @@ jobs:
         - npm run build
 
       deploy:
-        - provider: firebase
-          script: ./travis_merge_script.sh
-          skip_cleanup: true
-          token: $FIRE_TOKEN
-          on:
-            branch: dev
-
         - provider: firebase
           skip_cleanup: true
           token: $FIRE_TOKEN
