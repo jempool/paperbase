@@ -15,9 +15,9 @@ import PermMediaOutlinedIcon from '@material-ui/icons/PhotoSizeSelectActual';
 import PublicIcon from '@material-ui/icons/Public';
 import SettingsEthernetIcon from '@material-ui/icons/SettingsEthernet';
 import SettingsInputComponentIcon from '@material-ui/icons/SettingsInputComponent';
-// import TimerIcon from '@material-ui/icons/Timer';
-// import SettingsIcon from '@material-ui/icons/Settings';
-// import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup';
+import TimerIcon from '@material-ui/icons/Timer';
+import SettingsIcon from '@material-ui/icons/Settings';
+import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup';
 
 const categories = [
   {
@@ -31,14 +31,14 @@ const categories = [
       { id: 'Functions', icon: <SettingsEthernetIcon /> },
     ],
   },
-  // {
-  //   id: 'Quality',
-  //   children: [
-  //     { id: 'Analytics', icon: <SettingsIcon /> },
-  //     { id: 'Performance', icon: <TimerIcon /> },
-  //     { id: 'Test Lab', icon: <PhonelinkSetupIcon /> },
-  //   ],
-  // },
+  {
+    id: 'Quality',
+    children: [
+      { id: 'Analytics', icon: <SettingsIcon /> },
+      { id: 'Performance', icon: <TimerIcon /> },
+      { id: 'Test Lab', icon: <PhonelinkSetupIcon /> },
+    ],
+  },
 ];
 
 const styles = (theme) => ({
