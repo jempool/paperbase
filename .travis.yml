@@ -1,8 +1,6 @@
 language: node_js
 node_js:
   - 14
-after_success:
-  - ./travis_merge_script.sh
 
 jobs:
   include:
@@ -18,8 +16,8 @@ jobs:
         - npm install
         
       script:
-        - npm run test
         - npm run build
+        - npm run test
 
       deploy:
         - provider: firebase
