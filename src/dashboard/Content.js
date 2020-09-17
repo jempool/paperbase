@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// eslint-disable-next-line
 const BodyContent = ({ classes }) => (
   <div>
     <AppBar className={classes.searchBar} position="static" color="default" elevation={0} data-testid="content-paper">
@@ -77,7 +78,7 @@ function Content() {
 
   return (
     <Paper className={classes.paper}>
-      <BodyContent classes={classes} />
+      {/* <BodyContent classes={classes} /> */}
     </Paper>
   );
 }
